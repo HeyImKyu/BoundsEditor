@@ -1,7 +1,7 @@
 {
   "name": "kyu.heyimkyu.boundseditor",
   "displayName": "BoundsEditor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tool to work better with bounding boxes of mesh renderers",
   "gitDependencies": {},
   "vpmDependencies": {},

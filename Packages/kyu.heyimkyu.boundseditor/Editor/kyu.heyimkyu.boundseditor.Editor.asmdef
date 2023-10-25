@@ -1,14 +1,17 @@
 {
-  "name": "kyu.heyimkyu.boundseditor.Editor",
-  "references": [
-    "kyu.heyimkyu.boundseditor"
-  ],
-  "includePlatforms": [],
-  "excludePlatforms": [],
-  "allowUnsafeCode": false,
-  "autoReferenced": true,
-  "overrideReferences": false,
-  "precompiledReferences": [],
-  "defineConstraints": [],
-  "optionalUnityReferences": []
+    "name": "kyu.heyimkyu.boundseditor.Editor",
+    "references": [
+        "kyu.heyimkyu.boundseditor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
