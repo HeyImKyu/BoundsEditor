@@ -1,0 +1,16 @@
+{
+  "name": "kyu.heyimkyu.boundseditor",
+  "displayName": "BoundsEditor",
+  "version": "0.0.1",
+  "description": "Tool to work better with bounding boxes of mesh renderers",
+  "gitDependencies": {},
+  "vpmDependencies": {},
+  "author": {
+    "name": "HeyImKyu",
+    "email": "3ad4gum@gmail.com"
+  },
+  "legacyFolders": {},
+  "legacyFiles": {},
+  "localPath": "N:\\AvatarProjects\\BoundsEditor\\Packages\\kyu.heyimkyu.boundseditor",
+  "type": "tool"
+}

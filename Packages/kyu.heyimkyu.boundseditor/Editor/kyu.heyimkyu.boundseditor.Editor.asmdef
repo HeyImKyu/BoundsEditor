@@ -1,0 +1,14 @@
+{
+  "name": "kyu.heyimkyu.boundseditor.Editor",
+  "references": [
+    "kyu.heyimkyu.boundseditor"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": true,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "defineConstraints": [],
+  "optionalUnityReferences": []
+}
