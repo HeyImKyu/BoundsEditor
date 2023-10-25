@@ -78,12 +78,11 @@ jobs:
         uses: actions/deploy-pages@9dbe3824824f8a1377b8e298bafde1a50ede43e5
 
 
-      - name: Trigger listing repo
+      - name: Trigger Kyus Toolkit listing repo
         run: |
           curl -L \
-          -X POST \
-          -H "Accept: application/vnd.github+json" \
+          -X POST -H "Accept: application/vnd.github+json" \
           -H "Authorization: Bearer ${{secrets.PAT_TOKEN}}" \
           -H "X-GitHub-Api-Version: 2022-11-28" \
-          https://api.github.com/repos/HeyImKyu/Kyus-Toolkit/actions/workflows/build-listing.yaml/dispatches \
-          -d '{"ref":"mein"}'
+          https://api.github.com/repos/heyimkyu/kyus-toolkit/actions/workflows/build-listing.yml/dispatches \
+          --data "{\"ref\":\"main\"}"
