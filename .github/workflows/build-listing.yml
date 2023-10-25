@@ -76,3 +76,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@9dbe3824824f8a1377b8e298bafde1a50ede43e5
+
+
+      - name: Trigger listing repo
+        run: |
+        curl -XPOST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/HeyImKyyu/Kyus-Toolkit/actions/workflows/build-listing.yaml/dispatches --data '{"ref": "main"}'
