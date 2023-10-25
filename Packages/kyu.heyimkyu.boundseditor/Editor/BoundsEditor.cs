@@ -9,6 +9,7 @@ public class BoundsEditor : UnityEditor.EditorWindow
     public GameObject avatar;
     public GameObject preset;
     public Vector3 additive;
+    public bool includeInactive;
 
     [UnityEditor.MenuItem("Tools/Kyu/BoundsEditor")]
     public static void ShowWindow()
@@ -21,6 +22,7 @@ public class BoundsEditor : UnityEditor.EditorWindow
         avatar = (GameObject)EditorGUILayout.ObjectField("Avatar", avatar, typeof(GameObject), true);
         preset = (GameObject)EditorGUILayout.ObjectField("Preset", preset, typeof(GameObject), true);
         additive = EditorGUILayout.Vector3Field("Additive", additive);
+        includeInactive = EditorGUILayout.ToggleLeft("Include inactive", includeInactive);
 
         if (GUILayout.Button("Do it!"))
             DoIt();
@@ -40,7 +42,7 @@ public class BoundsEditor : UnityEditor.EditorWindow
         Bounds bodyBounds = GetBodyBounds();
         bodyBounds.size += additive;
 
-        var smrs = avatar.transform.GetComponentsInChildren<SkinnedMeshRenderer>();
+        var smrs = avatar.transform.GetComponentsInChildren<SkinnedMeshRenderer>(includeInactive);
 
         foreach (var renderer in smrs)
         {
